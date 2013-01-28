@@ -1,0 +1,604 @@
+/*!
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('font/fontawesome-webfont.eot?v=3.0.1');
+  src: url('font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    url('font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+    url('font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General */
+body {
+	max-width: 100%;
+}
+
+#content {
+	min-width: 0;
+}
+
+#upgrade-notification {
+       line-height: 1.2;
+       height: auto;
+       font-size: 10px;
+}
+
+#upgrade-notification div {
+       padding: 4px 10px;
+}
+
+#header-fix {
+       height: auto;
+}
+
+
+/* Home Page */
+#showListTable thead th:nth-child(3),
+#showListTable thead th:nth-child(4),
+#showListTable thead th:nth-child(5),
+#showListTable thead th:nth-child(6),
+#showListTable thead th:nth-child(7) {
+	display: none;
+}
+
+#showListTable tbody td:nth-child(3),
+#showListTable tbody td:nth-child(4),
+#showListTable tbody td:nth-child(5),
+#showListTable tbody td:nth-child(6),
+#showListTable tbody td:nth-child(7) {
+	display: none;
+}
+
+td.tvShow a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	overflow: hidden;
+	max-width: 190px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/* Coming Episodes */
+.h2footer {
+	margin: 0;
+	text-align: left;
+}
+
+.tvshowDiv {
+	overflow: hidden;
+	width: 100%;
+}
+
+.tvshowDiv th.nobg a {
+	display: block;
+	overflow: hidden;
+}
+
+.bannerThumb {
+	display: block;
+	max-width: 100%;
+	width: 266px;
+	height: auto;
+}
+
+@media only screen and (orientation: landscape) {
+	.bannerThumb {
+		width: 490px;
+	}
+}
+
+
+/* History */
+#historyTable thead tr > *:nth-child(1),
+#historyTable thead tr > *:nth-child(3),
+#historyTable thead tr > *:nth-child(4) {
+	display: none;
+}
+
+#historyTable tbody td:nth-child(1),
+#historyTable tbody td:nth-child(3),
+#historyTable tbody td:nth-child(4) {
+	display: none;
+}
+
+
+/* Manage */
+#massUpdateTable thead th {
+	width: auto !important;
+}
+
+#massUpdateTable td.tvShow a {
+	max-width: 100px;
+}
+
+#massUpdateTable thead tr > *:nth-child(1),
+#massUpdateTable thead tr > *:nth-child(2),
+#massUpdateTable thead tr > *:nth-child(3),
+#massUpdateTable thead tr > *:nth-child(5),
+#massUpdateTable thead tr > *:nth-child(6),
+#massUpdateTable thead tr > *:nth-child(7),
+#massUpdateTable thead tr > *:nth-child(10) {
+	display: none;
+}
+
+#massUpdateTable tbody td:nth-child(1),
+#massUpdateTable tbody td:nth-child(2),
+#massUpdateTable tbody td:nth-child(3),
+#massUpdateTable tbody td:nth-child(5),
+#massUpdateTable tbody td:nth-child(6),
+#massUpdateTable tbody td:nth-child(7),
+#massUpdateTable tbody td:nth-child(10) {
+	display: none;
+}
+
+#massUpdateTable tfoot td:nth-child(1) {
+	display: none;
+}
+
+.btn.get_more_eps {
+	float: right;
+}
+
+
+/* Add Shows */
+#addShowPortal {
+	max-width: 100%;
+}
+
+#addShowPortal h2 {
+	font-size: 18px;
+}
+
+#addShowPortal p {
+	font-size: 12px;
+}
+
+fieldset.sectionwrap,
+div.formpaginate {
+	min-width: 280px;
+	width: 100%;
+}
+
+@media only screen and (orientation: landscape) {
+	fieldset.sectionwrap,
+	div.formpaginate {
+		min-width: 506px;
+	}
+}
+
+.stepsguide + div,
+#addShowForm + br + div {
+	width: 100% !important;
+}
+
+.stepDiv {
+	padding: 15px 0 0;
+}
+
+.stepDiv select, #rootDirsControls {
+	width: auto !important;
+	min-width: 0 !important;
+}
+
+#rootDirs {
+	width: 100% !important;
+}
+
+#searchName {
+	margin-top: 10px;
+}
+
+#searchResults {
+	min-height: 44px;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+div.stepsguide .step {
+	padding-bottom: 12px;
+	width: 96px;
+	min-height: 50px;
+	font-size: 14px;
+	position: relative;
+}
+
+@media only screen and (orientation: landscape) {
+	div.stepsguide .step {
+		min-width: 170px;
+	}
+
+	#nameToSearch {
+		width: 280px;
+	}
+}
+div.stepsguide .step .smalltext {
+	padding: 0 5px 0 0;
+	margin-top: 5px;
+	font-size: 11px;
+}
+
+div.stepsguide .step p {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: 0;
+}
+
+#tabs label.nocheck, #tabs div.providerDiv, #tabs div #customQuality, .stepDiv label.nocheck, .stepDiv div.providerDiv, .stepDiv div #customQuality,
+#tabs label span.component-title, .stepDiv label span.component-title {
+	padding-left: 0;
+}
+
+
+/* Navbar */
+.navbar-inner {
+	padding: 0;
+}
+
+.navbar .nav {
+	float: none;
+	margin: 0;
+}
+
+.navbar .btn-navbar {
+	margin-right: 16px;
+	position: relative;
+}
+
+.navbar .btn-navbar .navbar-show {
+	margin-right: 10px;
+	top: 0;
+	right: 100%;
+	height: 100%;
+	color: rgba(255, 255, 255, 0.85);
+	text-shadow: none;
+	position: absolute;
+	white-space: nowrap;
+	line-height: 30px;
+}
+
+.navbar .navbar-show:before {
+	content: "Show Navigation";
+}
+
+.navbar:not(.navbar-active) .btn-navbar {
+	display: block;
+}
+
+.navbar .nav.pull-right {
+	display: none;
+}
+
+.collapse {
+	overflow: visible;
+}
+
+.navbar .nav-collapse,
+#SubMenu {
+	display: none;
+}
+
+.navbar-active .nav-collapse,
+.navbar-active + #SubMenu {
+	display: block;
+}
+
+.navbar .nav-collapse {
+	height: auto !important;
+}
+
+.navbar .nav > li > a {
+	display: block;
+	padding: 7px 5px 9px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 33px;
+	font-size: 10px;
+}
+
+.navbar .divider-vertical {
+	margin: 0;
+}
+
+.nav > li.active > a {
+	margin-top: 0;
+}
+
+#SubMenu {
+	padding: 0;
+}
+
+#SubMenu span {
+	padding: 0 0 16px;
+	font-size: 0;
+	display: block;
+	text-indent: -9999px;
+}
+
+#SubMenu span a {
+	padding: 2px 20px;
+	display: block;
+	font-size: 12px;
+	text-indent: 0;
+	margin-bottom: -17px;
+	position: relative;
+}
+
+#SubMenu span a:after {
+	content: "";
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	display: block;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#SubMenu span a:last-of-type:after {
+	content: none;
+}
+
+
+/* Nav Font Replacement */
+[id^="NAV"] > a,
+[id*=" NAV"] > a {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+
+	position: relative;
+}
+
+[id^="NAV"] > a,
+[id*=" NAV"] > a {
+	text-indent: -9999px;
+}
+
+[id^="NAV"] > a:before,
+[id*=" NAV"] > a:before {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: 0;
+	text-align: center;
+	position: absolute;
+}
+
+#NAVsystem > a:before {
+	content: "\f011";
+}
+
+#NAVhome > a:before {
+	content: "\f015";
+}
+
+#NAVcomingEpisodes > a:before {
+	content: "\f09e";
+}
+
+#NAVhistory > a:before {
+	content: "\f017";
+}
+
+#NAVmanage > a:before {
+	content: "\f079";
+}
+
+#NAVconfig > a:before {
+	content: "\f0ad";
+}
+
+#NAVerrorlogs > a:before {
+	content: "\f0f6";
+}
+
+.navbar #NAVmanage .dropdown-menu,
+.navbar #NAVconfig .dropdown-menu,
+.navbar #NAVerrorlogs .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+
+.navbar #NAVmanage .dropdown-menu:before,
+.navbar #NAVconfig .dropdown-menu:before,
+.navbar #NAVerrorlogs .dropdown-menu:before {
+	left: auto;
+	right: 9px;
+}
+
+.navbar #NAVmanage .dropdown-menu:after,
+.navbar #NAVconfig .dropdown-menu:after,
+.navbar #NAVerrorlogs .dropdown-menu:after {
+	left: auto;
+	right: 10px;
+}
+
+.navbar .nav > li > a {
+	padding: 0 5px;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+.nav > li.active > a {
+	margin: 0;
+	border-radius: 0;
+}
+
+
+/* Manual Post Processing */
+#episodeDir {
+	margin: 15px 0;
+	max-width: 97%;
+}
+
+
+/* Backlog Overview */
+.checkbox.inline {
+	font-size: 10px;
+}
+
+.radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
+	margin-left: 0;
+}
+
+.forceBacklog {
+	margin-left: 0;
+}
+
+
+/* Configuration */
+#summary {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+.component-group {
+	padding: 15px 0 25px;
+}
+
+.container.padding[style] {
+	width: auto !important;
+}
+
+#config-content,
+.component-group-list {
+	width: auto;
+}
+
+#config div.field-pair {
+	padding: 8px 0;
+}
+
+#config label span.component-title {
+	font-size: 12px;
+	width: 83px;
+}
+
+#config div.field-pair input {
+	max-width: 159px;
+}
+
+#config div.field-pair #log_dir {
+	max-width: 73px;
+}
+
+#config div.field-pair #api_key {
+	max-width: 76px;
+}
+
+.component-group-desc,
+.component-group-list {
+	float: none;
+	width: auto;
+}
+
+.component-group-desc p {
+	width: auto;
+}
+
+#providerOrderList {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+input, textarea, select, .uneditable-input {
+	max-width: 100%;
+}
+
+#mediabrowser {
+	padding-left: 0;
+}
+
+div.metadata-options-wrapper {
+	margin: 10px 0 20px;
+	float: none;
+	width: auto;
+}
+
+div.metadata-example-wrapper {
+	float: none;
+	width: auto;
+}
+
+#config label span.component-desc {
+	max-width: 175px;
+}
+
+@media only screen and (orientation: landscape) {
+	#config label span.component-desc {
+		max-width: 100%;
+	}
+}
+
+
+/* Show Detail */
+[id^="season"][id$="cols"] th:nth-child(2),
+[id^="season"][id$="cols"] th:nth-child(3),
+[id^="season"][id$="cols"] th:nth-child(6),
+[id^="season"][id$="cols"] th:nth-child(7) {
+	display: none;
+}
+
+[id^="season"][id$="cols"] th:nth-child(4),
+[id^="season"][id$="cols"] th:nth-child(9) {
+	width: 1px !important;
+	text-indent: -9999px;
+}
+
+[id^="season"][id$="cols"],
+tr[class*=" season"] {
+	font-size: 10px;
+}
+
+tr[class*=" season"] td:nth-child(2),
+tr[class*=" season"] td:nth-child(3),
+tr[class*=" season"] td:nth-child(6),
+tr[class*=" season"] td:nth-child(7) {
+	display: none;
+}
+
+div#summary {
+	margin: 10px 0;
+}
+
+#checkboxControls {
+	margin-top: -20px;
+	text-align: center;
+}
+
+#checkboxControls .pull-right {
+	float: none;
+}
